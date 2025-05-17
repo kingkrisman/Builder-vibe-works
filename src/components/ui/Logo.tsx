@@ -7,6 +7,7 @@ interface LogoProps {
   size?: "sm" | "md" | "lg";
   showText?: boolean;
   dark?: boolean;
+  useImage?: boolean;
 }
 
 const Logo = ({
@@ -26,22 +27,32 @@ const Logo = ({
     <Link to="/" className={cn("flex items-center gap-2 font-bold", className)}>
       <motion.div
         className={cn(
-          "flex items-center justify-center rounded-lg bg-primary p-1",
+          useImage
+            ? "overflow-hidden rounded-lg"
+            : "flex items-center justify-center rounded-lg bg-primary p-1",
           sizes[size].container,
         )}
         whileHover={{ rotate: 5, scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
-        <span
-          className={cn(
-            "flex items-center justify-center text-primary-foreground",
-            size === "sm" && "text-sm",
-            size === "md" && "text-base",
-            size === "lg" && "text-xl",
-          )}
-        >
-          DN
-        </span>
+        {useImage ? (
+          <img
+            src="/logo.svg"
+            alt="Daniels Network"
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <span
+            className={cn(
+              "flex items-center justify-center text-primary-foreground",
+              size === "sm" && "text-sm",
+              size === "md" && "text-base",
+              size === "lg" && "text-xl",
+            )}
+          >
+            DN
+          </span>
+        )}
       </motion.div>
 
       {showText && (

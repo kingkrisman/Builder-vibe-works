@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { Menu, X, Moon, Sun, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/ui/Logo";
 
 const NavLink = ({
   href,
@@ -89,18 +90,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <motion.div
-            className="rounded-lg bg-primary p-1"
-            whileHover={{ rotate: 5, scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <span className="block h-8 w-8 text-xl font-bold text-primary-foreground">
-              DN
-            </span>
-          </motion.div>
-          <span className="text-xl font-bold">Daniels Network</span>
-        </Link>
+        <Logo useImage size="md" showText />
 
         <div className="hidden md:flex md:items-center md:gap-6">
           <nav className="flex items-center gap-1">
