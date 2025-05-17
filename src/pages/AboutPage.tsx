@@ -24,9 +24,10 @@ import {
 
 const teamMembers = [
   {
-    name: "Daniel Johnson",
+    name: "Christian Daniels",
     role: "Founder & CEO",
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2Ffc85d92a82ca434e941f5758aa556acf",
     delay: 0,
   },
   {
@@ -115,7 +116,7 @@ const AboutPage = () => {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
               <FadeInLeft className="overflow-hidden rounded-lg shadow-md">
                 <img
-                  src="/placeholder.svg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2Faffc3eb283ac4040a45075a566b2d225"
                   alt="Daniels Network Team"
                   className="w-full h-auto object-cover"
                 />
