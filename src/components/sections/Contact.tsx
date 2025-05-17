@@ -149,13 +149,19 @@ const Contact = () => {
                 </Card>
               </div>
 
-              <div className="rounded-xl overflow-hidden h-64 md:h-72">
-                {/* Placeholder for Google Maps */}
-                <div className="bg-muted h-full w-full flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">
-                    Google Maps will be embedded here
-                  </span>
-                </div>
+              <div className="rounded-xl overflow-hidden h-64 md:h-72 shadow-md">
+                {/* Google Maps Embed */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101376.54703578067!2d-122.12280601971646!3d37.39950601480117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1690542941858!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Daniels Network Location"
+                  aria-label="Map showing Daniels Network office location"
+                ></iframe>
               </div>
             </div>
           </FadeInLeft>
