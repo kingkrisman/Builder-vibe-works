@@ -142,7 +142,8 @@ export const services: Service[] = [
       "Multi-platform optimization for maximum reach",
       "Technical expertise without the overhead of specialized staff",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F27291e6889f24d6e8a4ee30b6724995a",
     caseStudies: [
       {
         title: "Corporate Brand Video",
