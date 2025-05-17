@@ -16,7 +16,6 @@ import {
   Award,
   Check,
   Clock,
-  Download,
   MapPin,
   Target,
   Users,
@@ -115,19 +114,13 @@ const AboutPage = () => {
                     production, and IT services.
                   </p>
 
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-muted-foreground">
                     Throughout our journey, we've maintained our commitment to
                     quality, innovation, and client satisfaction. Our growth has
                     been driven by our ability to adapt to changing technologies
                     while consistently delivering exceptional results for our
                     clients.
                   </p>
-
-                  <Button variant="outline" size="lg" className="gap-2" asChild>
-                    <Link to="/contact">
-                      <Download className="h-4 w-4" /> Download Company Profile
-                    </Link>
-                  </Button>
                 </FadeInRight>
               </div>
             </div>
@@ -278,13 +271,19 @@ const AboutPage = () => {
                 </div>
               </FadeInLeft>
 
-              <FadeInRight className="rounded-xl overflow-hidden h-80 md:h-96">
-                {/* Placeholder for Google Maps */}
-                <div className="bg-muted h-full w-full flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">
-                    Google Maps will be embedded here
-                  </span>
-                </div>
+              <FadeInRight className="rounded-xl overflow-hidden h-80 md:h-96 shadow-md">
+                {/* Google Maps Embed */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101376.54703578067!2d-122.12280601971646!3d37.39950601480117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1690542941858!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Daniels Network Location"
+                  aria-label="Map showing Daniels Network office location"
+                ></iframe>
               </FadeInRight>
             </div>
           </div>
