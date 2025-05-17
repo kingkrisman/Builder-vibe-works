@@ -99,7 +99,8 @@ export const services: Service[] = [
       "Faster development through design systems",
       "Accessible interfaces for all users",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2Fe24937848b804cb39687ddebfea280c5",
     caseStudies: [
       {
         title: "E-commerce UX Redesign",
