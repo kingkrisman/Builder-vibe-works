@@ -26,12 +26,15 @@ const Logo = ({
   };
 
   return (
-    <Link to="/" className={cn("flex items-center gap-2 font-bold", className)}>
+    <Link
+      to="/"
+      className={cn("flex items-center gap-2 font-medium", className)}
+    >
       <motion.div
         className={cn(
           useImage
-            ? "overflow-hidden rounded-lg"
-            : "flex items-center justify-center rounded-lg bg-primary p-1",
+            ? "overflow-hidden rounded-lg flex flex-col"
+            : "flex flex-col items-center justify-center rounded-lg bg-primary p-1",
           sizes[size].container,
         )}
         whileHover={{ rotate: 5, scale: 1.1 }}
@@ -41,7 +44,7 @@ const Logo = ({
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F388caa6361de4420a1ccf1f18950c132"
             alt="Daniels Network"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover m-auto"
           />
         ) : (
           <span
@@ -61,8 +64,7 @@ const Logo = ({
       {showText && (
         <span
           className={cn(
-            "font-bold",
-            sizes[size].text,
+            "font-medium text-xl",
             dark ? "text-white" : "text-inherit",
           )}
         >
