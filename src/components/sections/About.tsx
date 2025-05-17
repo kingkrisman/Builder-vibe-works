@@ -76,7 +76,7 @@ const About = () => {
 
             <FadeInLeft delay={0.1}>
               <p className="text-muted-foreground mb-4">
-                Founded in 2014, Daniels Network has been at the forefront of
+                Founded in 2020, Daniels Network has been at the forefront of
                 technology innovation, providing comprehensive digital solutions
                 to businesses across various industries.
               </p>
@@ -113,7 +113,7 @@ const About = () => {
           <div>
             <FadeInRight className="mb-12 overflow-hidden rounded-lg shadow-xl">
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F388caa6361de4420a1ccf1f18950c132"
                 alt="Daniels Network Team"
                 className="w-full h-auto object-cover"
               />
