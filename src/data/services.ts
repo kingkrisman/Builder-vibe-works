@@ -298,7 +298,8 @@ export const services: Service[] = [
       "Access to expert knowledge and support",
       "Scale IT resources according to business needs",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2Fddfadef7580d4824bff82352afe17e24",
     caseStudies: [
       {
         title: "Cloud Migration Project",
