@@ -228,7 +228,8 @@ export const services: Service[] = [
       "Genuine or high-quality compatible parts",
       "Warranty on all repair services",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F6f673c42f7f04eebadc19de9eb1ff1d9",
   },
   {
     id: "graphic-design",
