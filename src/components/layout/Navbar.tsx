@@ -90,7 +90,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container flex h-16 items-center justify-between">
-        <Logo useImage size="md" showText />
+        <Logo useImage size="lg" showText />
 
         <div className="hidden md:flex md:items-center md:gap-6">
           <nav className="flex items-center gap-1">

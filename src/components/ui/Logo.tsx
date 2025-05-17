@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface LogoProps {
   className?: string;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "xl";
   showText?: boolean;
   dark?: boolean;
   useImage?: boolean;
@@ -22,6 +22,7 @@ const Logo = ({
     sm: { container: "h-6 w-6", text: "text-lg" },
     md: { container: "h-8 w-8", text: "text-xl" },
     lg: { container: "h-12 w-12", text: "text-3xl" },
+    xl: { container: "h-16 w-16", text: "text-4xl" },
   };
 
   return (
@@ -38,7 +39,7 @@ const Logo = ({
       >
         {useImage ? (
           <img
-            src="/logo.svg"
+            src="https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F388caa6361de4420a1ccf1f18950c132"
             alt="Daniels Network"
             className="h-full w-full object-cover"
           />
@@ -49,6 +50,7 @@ const Logo = ({
               size === "sm" && "text-sm",
               size === "md" && "text-base",
               size === "lg" && "text-xl",
+              size === "xl" && "text-2xl",
             )}
           >
             DN
