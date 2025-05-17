@@ -22,34 +22,6 @@ import {
   Users,
 } from "lucide-react";
 
-const teamMembers = [
-  {
-    name: "Christian Daniels",
-    role: "Founder & CEO",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2Ffc85d92a82ca434e941f5758aa556acf",
-    delay: 0,
-  },
-  {
-    name: "Sarah Williams",
-    role: "CTO",
-    image: "/placeholder.svg",
-    delay: 0.1,
-  },
-  {
-    name: "Michael Brown",
-    role: "Creative Director",
-    image: "/placeholder.svg",
-    delay: 0.2,
-  },
-  {
-    name: "Emily Davis",
-    role: "Lead Developer",
-    image: "/placeholder.svg",
-    delay: 0.3,
-  },
-];
-
 const stats = [
   {
     icon: <Users className="h-6 w-6" />,
@@ -216,56 +188,6 @@ const AboutPage = () => {
                   ))}
                 </ul>
               </FadeInRight>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="py-20">
-          <div className="container">
-            <div className="text-center mb-16">
-              <FadeInUp
-                as="h2"
-                className="text-3xl font-bold tracking-tight mb-4"
-              >
-                Meet Our Team
-              </FadeInUp>
-              <FadeInUp delay={0.1} className="mx-auto max-w-2xl">
-                <p className="text-muted-foreground text-lg">
-                  Our success is driven by our talented team of professionals
-                  who bring diverse skills and perspectives to every project.
-                </p>
-              </FadeInUp>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              {teamMembers.map((member, index) => (
-                <FadeInUp
-                  key={member.name}
-                  delay={member.delay}
-                  className="group"
-                >
-                  <div className="overflow-hidden rounded-lg mb-4">
-                    <motion.img
-                      src={member.image}
-                      alt={member.name}
-                      className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.5 }}
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold">{member.name}</h3>
-                  <p className="text-muted-foreground">{member.role}</p>
-                </FadeInUp>
-              ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <Button size="lg" asChild>
-                <Link to="/contact">
-                  Join Our Team <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>
