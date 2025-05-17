@@ -15,6 +15,7 @@ const Logo = ({
   size = "md",
   showText = true,
   dark = false,
+  useImage = false,
 }: LogoProps) => {
   // Size mapping
   const sizes = {
