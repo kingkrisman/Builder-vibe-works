@@ -174,10 +174,6 @@ const Navbar = () => {
               Contact
             </NavLink>
           </nav>
-
-          <Button size="sm" variant="default">
-            Get a Quote
-          </Button>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
