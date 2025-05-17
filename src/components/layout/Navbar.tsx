@@ -132,6 +132,12 @@ const Navbar = () => {
                         Software Development
                       </Link>
                       <Link
+                        to="/services/ui-ux-design"
+                        className="rounded-md px-3 py-2 text-sm hover:bg-muted"
+                      >
+                        UI/UX Design
+                      </Link>
+                      <Link
                         to="/services/video-editing"
                         className="rounded-md px-3 py-2 text-sm hover:bg-muted"
                       >
@@ -219,6 +225,13 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                     >
                       Software Development
+                    </Link>
+                    <Link
+                      to="/services/ui-ux-design"
+                      className="py-1 text-sm text-muted-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      UI/UX Design
                     </Link>
                     <Link
                       to="/services/video-editing"

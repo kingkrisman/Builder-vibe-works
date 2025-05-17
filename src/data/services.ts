@@ -11,6 +11,7 @@ import {
   Cloud,
   Headphones,
   Search,
+  Layout,
 } from "lucide-react";
 
 export interface Service {
@@ -69,6 +70,49 @@ export const services: Service[] = [
           "Redesigned and redeveloped an outdated e-commerce platform for a retail client, implementing modern features and optimizing performance.",
         results:
           "The new platform resulted in a 60% increase in online sales and a 25% improvement in conversion rates.",
+      },
+    ],
+  },
+  {
+    id: "ui-ux-design",
+    title: "UI/UX Design",
+    shortDescription: "User-centered design that enhances digital experiences.",
+    fullDescription:
+      "Our UI/UX design team creates intuitive, engaging, and accessible digital experiences that delight users and drive business results. We combine user research, information architecture, interaction design, and visual aesthetics to build interfaces that are both beautiful and functional. From wireframes to high-fidelity prototypes, we ensure your digital products are user-friendly and aligned with your brand identity.",
+    icon: Layout,
+    features: [
+      "User research and persona development",
+      "Information architecture",
+      "Wireframing and prototyping",
+      "Interactive design",
+      "Usability testing",
+      "Design systems creation",
+      "Responsive design for all devices",
+    ],
+    benefits: [
+      "Improved user satisfaction and engagement",
+      "Reduced user friction and support costs",
+      "Higher conversion rates and user retention",
+      "Consistent brand experience across platforms",
+      "Data-driven design decisions",
+      "Faster development through design systems",
+      "Accessible interfaces for all users",
+    ],
+    image: "/placeholder.svg",
+    caseStudies: [
+      {
+        title: "E-commerce UX Redesign",
+        description:
+          "Completely redesigned the user experience for an e-commerce platform, focusing on simplifying the checkout process and improving product discovery.",
+        results:
+          "The redesign led to a 35% increase in conversion rate and a 28% reduction in cart abandonment within three months of implementation.",
+      },
+      {
+        title: "Banking App Transformation",
+        description:
+          "Transformed a complex banking application into an intuitive mobile experience, prioritizing common tasks and improving navigation.",
+        results:
+          "User satisfaction scores increased by 45%, and the time to complete common transactions decreased by 60%.",
       },
     ],
   },
