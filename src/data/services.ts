@@ -185,7 +185,8 @@ export const services: Service[] = [
       "Gather valuable user data and insights",
       "Streamline customer interactions and services",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F14776e93246c442fb085dd0fa97a0327",
     caseStudies: [
       {
         title: "Fitness Tracking App",
