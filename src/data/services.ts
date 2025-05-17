@@ -255,7 +255,8 @@ export const services: Service[] = [
       "Stand out from competitors with professional design",
       "Build credibility and trust with your audience",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2Fd07e4762e10d48be918e4c04ce24465d",
     caseStudies: [
       {
         title: "Brand Identity Redesign",
