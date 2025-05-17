@@ -55,7 +55,8 @@ export const services: Service[] = [
       "Scalable solutions that grow with your business",
       "Competitive advantage in your market",
     ],
-    image: "/placeholder.svg",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Faeee31fcf1114fceb0dea40aa0430358%2F72abc81dd220491a895e3a6bb247a467",
     caseStudies: [
       {
         title: "Healthcare Management System",
